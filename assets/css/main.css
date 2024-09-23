@@ -25,10 +25,14 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,
+aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	article {
+		clear: both; /* Ensure the article content clears any floating elements */
+		display: block; /* Ensure the article is a block element */
+	}
 body {
 	line-height: 1;
 }
@@ -198,6 +202,60 @@ input, select, textarea {
 			margin: 3em 0;
 		}
 
+		.image-container {
+			display: block;
+			clear: both; 
+			text-align: center;
+		}
+
+    	.responsive-img {
+        max-width: 62%;
+        height: auto;
+		display: block;
+		margin: 0 auto;
+    	}
+		
+		.move-image {
+			position: relative;
+			top: -45px; /* Move the image up */
+			left: -80px; /* Move the image to the left */
+		}
+		h3, p {
+			clear: both; /* Ensure the text clears any floating or positioned elements */
+		}
+
+		.raise-text {
+			position: relative;
+			top: -20px; /* Raise the text box by 30 pixels */
+		}
+		.scale-down {
+			top: 40px;
+			max-width: 60%;
+			max-height: auto;
+		}
+		.move-left {
+			position: relative;
+			left: -250px; /* Move the image to the left */
+		}
+		.lower-text {
+			position: relative;
+			top: 30px; /* Lower the text box by 20 pixels */
+		}
+		.move-up {
+			position: relative;
+			top: -5px; /* Move the image up */
+		}
+		.move-down {
+			position: relative;
+			top: 1px; /* Move the image up */
+		}
+		.view-button {
+			position: absolute;
+			bottom: 10px; /* Adjust this value to position the button vertically */
+			left: 50%;
+			transform: translateX(-50%);
+			display: none; /* Initially hide the button */
+		}
 	blockquote {
 		border-left: solid 6px #efefef;
 		font-style: italic;
