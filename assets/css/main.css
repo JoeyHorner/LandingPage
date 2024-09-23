@@ -214,11 +214,20 @@ input, select, textarea {
 		display: block;
 		margin: 0 auto;
     	}
-		
+		.scaled-responsive-img {
+			max-width: 31%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		.move-to-left {
+			position: relative;
+			left: -17vw;
+		}
 		.move-image {
 			position: relative;
-			top: -45px; /* Move the image up */
-			left: -80px; /* Move the image to the left */
+			top: -4.5vh; /* Move the image up */
+			left: -8vw; /* Move the image to the left */
 		}
 		h3, p {
 			clear: both; /* Ensure the text clears any floating or positioned elements */
@@ -228,22 +237,31 @@ input, select, textarea {
 			position: relative;
 			top: -20px; /* Raise the text box by 30 pixels */
 		}
+
+		.lower-italy-text {
+			position: relative;
+			top: 4%
+		}
 		.scale-down {
-			top: 40px;
+			top: 4vh;
 			max-width: 60%;
 			max-height: auto;
 		}
 		.move-left {
 			position: relative;
-			left: -250px; /* Move the image to the left */
+			left: -12.5vw; /* Move the image to the left */
+		}
+		.lower-article {
+			position: relative;
+			top: 3%
 		}
 		.lower-text {
 			position: relative;
-			top: 30px; /* Lower the text box by 20 pixels */
+			top: 3vh; /* Lower the text box by 20 pixels */
 		}
 		.move-up {
 			position: relative;
-			top: -5px; /* Move the image up */
+			top: -0.5vh; /* Move the image up */
 		}
 		.move-down {
 			position: relative;
